@@ -1,0 +1,67 @@
+<!DOCTYPE HTML-->
+<html>
+<head>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" type="text/css" />
+<link rel="stylesheet" href="css/jquery.mobile.theme-1.4.5.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-2.2.0.min.js" ></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js" ></script>
+
+
+<style type="text/css">
+    #encabezado{
+        text-align: center;
+        font-size: 14px;
+        color: red;
+        font-weight: bold;
+    }
+    #pie{
+        text-align: center;
+        font-size: 9px;
+        color: blue;
+        font-weight: bold;   
+    }
+    
+</style>
+</head>
+<body>
+<div data-role="page" id="principal">
+        <div data-role="header">
+            <h1>Mi aplicacion </h1>
+        </div>
+        <div data-role="content">
+            <p id="encabezado">Transiciones</p>
+            <a href="#segunda" data-role="button" data-transition="slideup">Transicion hacia arriba</a>
+            <a href="#segunda" data-role="button" data-transition="slidedown">Transicion hacia abajo</a>
+            <a href="#segunda" data-role="button" data-transition="top">Transicion top</a>
+            <a href="#segunda" data-role="button" data-transition="flip">Transicion Flip</a>
+            <a href="#segunda" data-role="button" data-transition="fade">Transicion Fade</a>
+            <a href="#segunda" data-role="button" data-transition="flow">Transicion Flow</a>
+            <a href="#segunda" data-role="button" data-transition="slidefade">Transicion slidefade</a>
+            <a href="#segunda" data-role="button" data-transition="turn">Transicion turn</a>
+            <a href="#segunda" data-role="button" data-transition="ninguno">Transicion ninguno</a>
+        </div>
+        <div data-role="footer">
+           <p id="pie"> pie de pagina</p>
+           <div data-role="controlgroup" data-type="horizontal">
+                <a href="#segunda" class="ui-btn ui-icon-info ui-icon-left"> Abrir </a>
+                <a href="#" class="ui-btn"> Facebook </a>
+                <a href="#" class="ui-btn"> Twitter </a>
+        </div>
+        </div>
+</div>
+<div data-role="page" id="segunda">
+        <div data-role="header">
+            <h1>Mi aplicacion2 </h1>
+        </div>
+        <div data-role="content">
+            <p> Hola mundo </p>
+            <a href="#principal" data-role="button" data-transition="slideup">Transicion hacia arriba</a>
+            <a href="#principal" data-role="button" data-transition="slidedown">Transicion hacia abajo</a>
+        </div>
+        <div data-role="footer">
+           <p> pie de pagina</p>
+        </div>
+</div>
+</body>
+</html>
